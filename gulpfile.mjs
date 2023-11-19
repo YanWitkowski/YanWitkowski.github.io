@@ -1,8 +1,9 @@
 import gulp from "gulp";
+
 import del from "del";
 import include from "gulp-file-include";
 import plumber from "gulp-plumber";
-import formatHTML from "gulp-format-html";
+import formatHtml from "gulp-format-html";
 
 import autoprefixer from "autoprefixer";
 import less from "gulp-less";
@@ -22,23 +23,31 @@ import svgmin from "gulp-svgmin"
 
 import server from "browser-sync";
 
-const resources = {
-    html: "src/html/**/*.html",
-    jsVendor: "src/scripts/vendor/*.js",
-    less: "src/styles/**/*.js",
-    static: [
-        "src/assets/icons/**/*.*",
-        "src/assets/fonts/**/*.(woff,woff2)"
-    ],
-    images: "src/assets/images/**/*.{png,jpg,jpeg,webp,gif,svg}"};
-    svgSprite: "src/assets/svg-sprite/*.svg"
+const resources = { 
+    html: "src/html/**/*.html", 
+    jsDev: "src/scripts/dev/**/*.js", 
+    jsVendor: "src/scripts/vendor/**/*.js", 
+    images: "src/assets/images/**/*.{png,jpg,jpeg,webp,gif,svg}", 
+    less: "src/styles/**/*.less", 
+    svgSprite: "src/assets/svg-sprite/*.svg", 
+    static: [ 
+        "src/assets/icons/**/*.*", 
+        "src/assets/favicons/**/*.*", 
+        "src/assets/fonts/**/*.{woff,woff2}", 
+        "src/assets/video/**/*.{mp4,webm}", 
+        "src/assets/audio/**/*.{mp3,ogg,wav,aac}", 
+        "src/json/**/*.json", 
+        "src/php/**/*.php" 
+    ] 
+};
 
 function clean() {
     return del("dist");
 }
 
 function includeHtml() {
-    return gulp.src("src/html/*.html")
+    return gulp
+    .src("src/html/*.html")
     .pipe(plumber())
     .pipe(
         include({
@@ -46,7 +55,7 @@ function includeHtml() {
             basepath: "@file"
         })
     )
-    .pipe(formatHTML())
+    .pipe(formatHtml())
     .pipe(gulp.dest("dist"));
 }
 
@@ -90,9 +99,10 @@ function js() {
 }
 
 function jsCopy() {
-    return gulp.src(resources.jsVendor)
+    return gulp
+    .src(resources.jsVendor)
     .pipe(plumber())
-    .pipe(gulp.dest("dist/scripts"))
+    .pipe(gulp.dest("dist/scripts"));
 }
 
 function copy() {
@@ -100,7 +110,7 @@ function copy() {
     .src(resources.static, {
         base: "src"
      })
-.pipe(gulp.dest("dist/"))
+     .pipe(gulp.dest("dist/"));
 }
 
 function images(){
@@ -122,7 +132,7 @@ function svgSprite() {
     .pipe(
         svgmin({
             js2svg: {
-                pretty: true
+                 pretty: true
             }
         })
         )
@@ -132,7 +142,7 @@ function svgSprite() {
             })
         )
     .pipe(rename("symbols.svg"))
-    .pipe(gulp.dest("dist/assets/icons"))
+    .pipe(gulp.dest("dist/assets/icons"));
 }
 
 const build = gulp.series(
@@ -154,7 +164,7 @@ function serve() {
     server.init({
         server: "dist"
     });
-    gulp.watch(resources.html, gulp.series(include, reloadServer));
+    gulp.watch(resources.html, gulp.series(includeHtml, reloadServer));
     gulp.watch(resources.less, gulp.series(style, reloadServer));
     gulp.watch(resources.jsDev, gulp.series(js, reloadServer));
     gulp.watch(resources.jsVendor, gulp.series(jsCopy, reloadServer));
