@@ -50,3 +50,16 @@ html,body {
     font-family: @font1;
     cursor: pointer;
   }
+
+  input,
+textarea {
+  &::placeholder {
+    color: #6C6C6C;
+  }
+}
+input:focus,
+textarea:focus {
+  &::placeholder {
+    color: transparent
+  }
+}
