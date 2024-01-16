@@ -8,31 +8,32 @@
     <link rel="stylesheet" href="styles/styles.css?ver=0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="body">
     <header class="page-header">
         <div class="page-header__container">
-            <a href="index.html" 
-            class="page-header__logo">
-             <!-- <img src="assets/images/logo.svg"
+            <a href="index.html" class="page-header__logo">
+                <!-- <img src="assets/images/logo.svg"
              class="page-header__logo-img" /> -->
-             <svg class="page-header__logo-img" width="202" height="147">
-                <use xlink:href="assets/icons/symbols.svg#logo">
+                <svg class="page-header__logo-img" width="202" height="147">
+                    <use xlink:href="assets/icons/symbols.svg#logo">
                 </svg>
-             <class="page-header__logo-img" /> 
-         </a>
-         <nav class="page-header__nav-link">
-             <a href="#" class="page-header__nav-link">Мероприятия</a>
-             <a href="#" class="page-header__nav-link">Блог</a>
-             <a href="#" class="page-header__nav-link">О нас</a>
-             <a href="#" class="page-header__nav-link">Контакты</a>
-         </nav>
-         <a href="#" class="btn page-header__user-btn">Войти</a>
+                <class="page-header__logo-img" />
+            </a>
+            <nav class="page-header__nav-link">
+                <a href="#" class="page-header__nav-link">Мероприятия</a>
+                <a href="#" class="page-header__nav-link">Блог</a>
+                <a href="#" class="page-header__nav-link">О нас</a>
+                <a href="#" class="page-header__nav-link">Контакты</a>
+            </nav>
+            <a href="#" class="btn page-header__user-btn">Войти</a>
         </div>
-         
-     </header>
+
+    </header>
 
     <main class="main">
         <div class="breadcrumbs">
@@ -127,86 +128,132 @@
                         <h4 class="reserve_section-title reserve__section-title--mb30">
                             Забронировать столик
                         </h4>
-                
+
                         <label class="reserve__check check check--red">
                             <input type="checkbox" name="table_1" class="check__input" />
                             <span class="check__mark"></span>
                             <span class="check__label">1 стол</span>
                         </label>
-                
+
                         <label class="reserve__check check">
                             <input type="checkbox" name="table_2" class="check__input" />
                             <span class="check__mark"></span>
                             <span class="check__label">2 стол</span>
                         </label>
-                
-                        <!-- Ещё чекбоксы -->
-                
+
+                        <label class="reserve__check check">
+                            <input type="checkbox" name="table_3" class="check__input" />
+                            <span class="check__mark"></span>
+                            <span class="check__label">3 стол</span>
+                        </label>
+
+                        <label class="reserve__check check check--red">
+                            <input type="checkbox" name="table_4" class="check__input" />
+                            <span class="check__mark"></span>
+                            <span class="check__label">4 стол</span>
+                        </label>
+
                         <label class="reserve__check check check--disabled">
                             <input type="checkbox" name="table_5" class="check__input" disabled />
                             <span class="check__mark"></span>
                             <span class="check__label">5 стол</span>
                         </label>
-                
-                        <!-- Оставшиеся чекбоксы -->
+
+                        <label class="reserve__check check">
+                            <input type="checkbox" name="table_6" class="check__input" />
+                            <span class="check__mark"></span>
+                            <span class="check__label">6 стол</span>
+                        </label>
+
+                        <label class="reserve__check check check--red">
+                            <input type="checkbox" name="table_7" class="check__input" />
+                            <span class="check__mark"></span>
+                            <span class="check__label">7 стол</span>
+                        </label>
+
+                        <label class="reserve__check check check--red">
+                            <input type="checkbox" name="table_8" class="check__input" />
+                            <span class="check__mark"></span>
+                            <span class="check__label">8 стол</span>
+                        </label>
+
+                        <label class="reserve__check check check--red">
+                            <input type="checkbox" name="table_9" class="check__input" />
+                            <span class="check__mark"></span>
+                            <span class="check__label">9 стол</span>
+                        </label>
+
+                        <label class="reserve__check check">
+                            <input type="checkbox" name="table_10" class="check__input" />
+                            <span class="check__mark"></span>
+                            <span class="check__label">10 стол</span>
+                        </label>
+
+                        <label class="reserve__check check">
+                            <input type="checkbox" name="table_11" class="check__input" />
+                            <span class="check__mark"></span>
+                            <span class="check__label">11 стол</span>
+                        </label>
                     </div>
-                
+
                     <div class="reserve__scheme">
                         <div class="reserve__scheme-container">
                             <h4 class="reserve__scheme-title">Сцена</h4>
-                
+
                             <div class="reserve__scheme-wrapper">
-                                @@include('scene.html')
+                                <svg class="scene" width="780" height="399">
+                                    <use xlink:href="assets/icons/symbols.svg#scene"></use>
+                                </svg>
                             </div>
                         </div>
                     </div>
-                
-                
+
                     <div class="reserve__order">
                         <h4 class="reserve__section-title">Ваши пригласительные билеты</h4>
-                
+
                         <div class="reserve__tickets-list">
                             <div class="reserve__tickets">
                                 <div class="reserve__qty" data-caption="шт." data-price="1400">0</div>
                                 <div class="reserve__sum" data-currency="₽">0</div>
                             </div>
-                
+
                             <div class="reserve__tickets">
                                 <div class="reserve__qty" data-caption="шт." data-price="1250">0</div>
                                 <div class="reserve__sum" data-currency="₽">0</div>
                             </div>
                         </div>
-                
+
                         <div class="reserve__total" data-caption="Сумма" data-currency="₽">0</div>
-                
+                        
                         <button type="submit" class="btn btn--red reserve__submit">
                             Купить билеты
                         </button>
                     </div>
-                
+
                     <div class="reserve__legend">
                         <div class="reserve__price">
                             <h4 class="reserve__section-title">
                                 Стоимость пригласительного билета
                             </h4>
-                
+
                             <div class="reserve__price-list">
-                                <div class="reserve__price-item reserve__price-item--red" data-caption="₽ | 1 персона"></div>
+                                <div class="reserve__price-item reserve__price-item--red" data-caption="₽ | 1 персона">
+                                </div>
                                 <div class="reserve__price-item" data-caption="₽ | 1 персона"></div>
                             </div>
                         </div>
-                        
+
                         <div class="reserve__notation">
                             <h4 class="reserve__section-title">
                                 Примечание
                             </h4>
-                
+
                             <div class="reserve__note reserve__note--free">доступные места</div>
                             <div class="reserve__note reserve__note--booked">забронировано</div>
                         </div>
                     </div>
                 </form>
-                
+
             </div>
         </article>
     </main>
@@ -215,23 +262,18 @@
         <div class="page-footer__container">
             <div class="page-footer__wrapper">
                 <nav class="page-footer__nav">
-                    <a href=""
-                    class="page-footer__nav-link">Календарь мероприятий</a>
-                    <a href=""
-                    class="page-footer__nav-link">Провести мероприятие</a>
-                    <a href=""
-                    class="page-footer__nav-link">Стать арендатором</a>
-                    <a href=""
-                    class="page-footer__nav-link">Наши проекты</a>
-                    <a href=""
-                    class="page-footer__nav-link">Контакты</a>
+                    <a href="" class="page-footer__nav-link">Календарь мероприятий</a>
+                    <a href="" class="page-footer__nav-link">Провести мероприятие</a>
+                    <a href="" class="page-footer__nav-link">Стать арендатором</a>
+                    <a href="" class="page-footer__nav-link">Наши проекты</a>
+                    <a href="" class="page-footer__nav-link">Контакты</a>
                 </nav>
                 <form class="page-footer__form subscribe">
                     <h4 class="subscribe__title">
                         Подпишись и будь в курсе происходящего
                     </h4>
                     <div class="subscribe__wrapper">
-                        <input type="email" name="email" placeholder="Email" class="subscribe__input" required/>
+                        <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
                         <button type="submit" class="subscribe__submit">Подписаться</button>
                     </div>
                     <label class="subscribe__check check">
@@ -245,7 +287,7 @@
                 </form>
             </div>
         </div>
-    
+
     </footer>
 
     <div class="pp">
@@ -337,7 +379,8 @@
                                 <span class="field__label">
                                     Фамилия*
                                 </span>
-                                <input type="text" class="field__input" placeholder="Фамилия" name="last_name" required />
+                                <input type="text" class="field__input" placeholder="Фамилия" name="last_name"
+                                    required />
                             </label>
                             <label class="form__field form__field--w50 field">
                             </label><span class="field__label">
@@ -358,12 +401,13 @@
                             </span>
                             <textarea class="field__textarea" name="wish"></textarea>
                         </label>
-    
+
                         <label class="form__check form__check--mb40 check">
                             <input type="checkbox" class="check__input" name="agree" required />
                             <span class="check__mark"></span>
                             <span class="check__label">
-                                Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных
+                                Я соглашаюсь с пользовательским соглашением и с политикой использования персональных
+                                данных
                             </span>
                         </label>
                         <div class="form_btn">
