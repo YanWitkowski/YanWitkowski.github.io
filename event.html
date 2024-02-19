@@ -2,428 +2,477 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>Lenni Art</title>
-    <link rel="stylesheet" href="styles/styles.css?ver=0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Lenni Art</title>
+  <link rel="stylesheet" href="styles/styles.css?ver=0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="scripts/main.min.js"></script>
+</head>
 
 <body class="body">
-    <header class="page-header">
-        <div class="page-header__container">
-            <a href="index.html" class="page-header__logo">
-                <!-- <img src="assets/images/logo.svg"
-             class="page-header__logo-img" /> -->
-                <svg class="page-header__logo-img" width="202" height="147">
-                    <use xlink:href="assets/icons/symbols.svg#logo">
-                </svg>
-                <class="page-header__logo-img" />
-            </a>
-            <nav class="page-header__nav-link">
-                <a href="#" class="page-header__nav-link">Мероприятия</a>
-                <a href="#" class="page-header__nav-link">Блог</a>
-                <a href="#" class="page-header__nav-link">О нас</a>
-                <a href="#" class="page-header__nav-link">Контакты</a>
-            </nav>
-            <a href="#" class="btn page-header__user-btn">Войти</a>
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href="index.html" class="page-header__logo">
+        <svg class="page-header__logo-icon" width="202" height="147">
+          <use xlink:href="assets/icons/symbols.svg#logo">
+        </svg>
+      </a>
+
+      <nav class="page-header__nav">
+        <a href="#" class="page-header__nav-link">Мероприятия</a>
+        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="#" class="page-header__nav-link">О нас</a>
+        <a href="#" class="page-header__nav-link">Контакты</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Ян В.
+          </a>
+
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door">
+
+              </use>
+            </svg>
+          </a>
         </div>
+      </nav>
 
-    </header>
-
-    <main class="main">
-        <div class="breadcrumbs">
-            <a href="#" class="breadcrumbs__link">Главная</a>
-            <a href="#" class="breadcrumbs__link">Раздел</a>
-            <a href="#" class="breadcrumbs__link">Страница раздела</a>
-        </div>
-
-        <article class="event">
-            <header class="event__header">
-                <h1 class="event__title title">Вечер | The Best of Sade</h1>
-
-                <div class="event__about">
-                    <div class="event__info">
-                        <time datetime="2024-12-16T20:00" class="event__time">
-                            16/12/2024
-                        </time>
-
-                        <div class="event__info-text">
-                            Кафе "Птичка"
-                        </div>
-                    </div>
-
-                    <picture class="event__picture">
-                        <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/sade_mobile.webp" />
-
-                        <source media="(max-width: 1169px)" srcset="assets/images/sade_mobile.jpg" />
-
-                        <source type="image/webp" srcset="assets/images/sade.webp" />
-
-                        <img class="event__image" src="assets/images/sade.jpg" alt="Вечер | The Best of Sade">
-                    </picture>
-
-                    <div class="event__info">
-                        <span class="event__time" data-caption="начало">
-                            20:00
-                        </span>
-
-                        <div class="event__info-text">
-                            Ленина 10 | 2 этаж
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <div class="event__container">
-                <div class="event__content content">
-                    <h5>Программа мероприятия:</h5>
-
-                    <ul>
-                        <li>20:15 — Приветствие гостей</li>
-                        <li>20:30 — Первая подача блюд | Салаты</li>
-                        <li>20:40 — Живой вокал | Композиции 1-3</li>
-                        <li>21:20 — Подача горячих блюд</li>
-                        <li> 21:30 — Живой вокал | Композиции 4-7</li>
-                        <li>22:15 — Подача десерта</li>
-                        <li>22:30 — Живой вокал | Композиции 8-9</li>
-                        <li>23:00 — Завершение вечера</li>
-                    </ul>
-
-                    <br />
-                    <h5>The Best of Sade</h5>
-                    <p>
-                        Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая самые
-                        популярные хиты группы, раритеты и их любимые треки.
-                    </p>
-
-                    <p>
-                        Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры. Она
-                        лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав
-                        более 2 миллионов копий в Европе.
-                    </p>
-
-                    <br />
-
-                    <ol>
-                        <li>Your Love Is King</li>
-                        <li>Hang On To Your Love</li>
-                        <li>Smooth Operator</li>
-                        <li>Jezebel</li>
-                        <li>The Sweetest Taboo</li>
-                        <li>Is It A Crime</li>
-                        <li>Never As Good As The First Time</li>
-                        <li>Love Is Stronger Than Pride</li>
-                        <li>Paradise</li>
-                    </ol>
-                </div>
-
-                <!-- prettier-ignore -->
-                <form class="reserve @@class">
-                    <div class="reserve__checks">
-                        <h4 class="reserve_section-title reserve__section-title--mb30">
-                            Забронировать столик
-                        </h4>
-
-                        <label class="reserve__check check check--red">
-                            <input type="checkbox" name="table_1" class="check__input" />
-                            <span class="check__mark"></span>
-                            <span class="check__label">1 стол</span>
-                        </label>
-
-                        <label class="reserve__check check">
-                            <input type="checkbox" name="table_2" class="check__input" />
-                            <span class="check__mark"></span>
-                            <span class="check__label">2 стол</span>
-                        </label>
-
-                        <label class="reserve__check check">
-                            <input type="checkbox" name="table_3" class="check__input" />
-                            <span class="check__mark"></span>
-                            <span class="check__label">3 стол</span>
-                        </label>
-
-                        <label class="reserve__check check check--red">
-                            <input type="checkbox" name="table_4" class="check__input" />
-                            <span class="check__mark"></span>
-                            <span class="check__label">4 стол</span>
-                        </label>
-
-                        <label class="reserve__check check check--disabled">
-                            <input type="checkbox" name="table_5" class="check__input" disabled />
-                            <span class="check__mark"></span>
-                            <span class="check__label">5 стол</span>
-                        </label>
-
-                        <label class="reserve__check check">
-                            <input type="checkbox" name="table_6" class="check__input" />
-                            <span class="check__mark"></span>
-                            <span class="check__label">6 стол</span>
-                        </label>
-
-                        <label class="reserve__check check check--red">
-                            <input type="checkbox" name="table_7" class="check__input" />
-                            <span class="check__mark"></span>
-                            <span class="check__label">7 стол</span>
-                        </label>
-
-                        <label class="reserve__check check check--red">
-                            <input type="checkbox" name="table_8" class="check__input" />
-                            <span class="check__mark"></span>
-                            <span class="check__label">8 стол</span>
-                        </label>
-
-                        <label class="reserve__check check check--red">
-                            <input type="checkbox" name="table_9" class="check__input" />
-                            <span class="check__mark"></span>
-                            <span class="check__label">9 стол</span>
-                        </label>
-
-                        <label class="reserve__check check">
-                            <input type="checkbox" name="table_10" class="check__input" />
-                            <span class="check__mark"></span>
-                            <span class="check__label">10 стол</span>
-                        </label>
-
-                        <label class="reserve__check check">
-                            <input type="checkbox" name="table_11" class="check__input" />
-                            <span class="check__mark"></span>
-                            <span class="check__label">11 стол</span>
-                        </label>
-                    </div>
-
-                    <div class="reserve__scheme">
-                        <div class="reserve__scheme-container">
-                            <h4 class="reserve__scheme-title">Сцена</h4>
-
-                            <div class="reserve__scheme-wrapper">
-                                <svg class="scene" width="780" height="399">
-                                    <use xlink:href="assets/icons/symbols.svg#scene"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="reserve__order">
-                        <h4 class="reserve__section-title">Ваши пригласительные билеты</h4>
-
-                        <div class="reserve__tickets-list">
-                            <div class="reserve__tickets">
-                                <div class="reserve__qty" data-caption="шт." data-price="1400">0</div>
-                                <div class="reserve__sum" data-currency="₽">0</div>
-                            </div>
-
-                            <div class="reserve__tickets">
-                                <div class="reserve__qty" data-caption="шт." data-price="1250">0</div>
-                                <div class="reserve__sum" data-currency="₽">0</div>
-                            </div>
-                        </div>
-
-                        <div class="reserve__total" data-caption="Сумма" data-currency="₽">0</div>
-
-                        <button type="submit" class="btn reserve__submit reserve__submit--red_dark">
-                            Купить билеты
-                        </button>
-                    </div>
-
-                    <div class="reserve__legend">
-                        <div class="reserve__price">
-                            <h4 class="reserve__section-title">
-                                Стоимость пригласительного билета
-                            </h4>
-
-                            <div class="reserve__price-list">
-                                <div class="reserve__price-item reserve__price-item--red" data-caption="₽ | 1 персона">
-                                </div>
-                                <div class="reserve__price-item" data-caption="₽ | 1 персона"></div>
-                            </div>
-                        </div>
-
-                        <div class="reserve__notation">
-                            <h4 class="reserve__section-title">
-                                Примечание
-                            </h4>
-
-                            <div class="reserve__note reserve__note--free">доступные места</div>
-                            <div class="reserve__note reserve__note--booked">забронировано</div>
-                        </div>
-                    </div>
-                </form>
-
-            </div>
-        </article>
-    </main>
-
-    <footer class="page-footer">
-        <div class="page-footer__container">
-            <div class="page-footer__border"></div>
-            <div class="page-footer__wrapper">
-                <nav class="page-footer__nav">
-                    <a href="" class="page-footer__nav-link">Календарь мероприятий</a>
-                    <a href="" class="page-footer__nav-link">Провести мероприятие</a>
-                    <a href="" class="page-footer__nav-link">Стать арендатором</a>
-                    <a href="" class="page-footer__nav-link">Наши проекты</a>
-                    <a href="" class="page-footer__nav-link">Контакты</a>
-                </nav>
-                <form class="page-footer__form subscribe">
-                    <h4 class="subscribe__title">
-                        Подпишись и будь в курсе происходящего
-                    </h4>
-                    <div class="subscribe__wrapper">
-                        <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
-                        <button type="submit" class="subscribe__submit">Подписаться</button>
-                    </div>
-                    <label class="subscribe__check check">
-                        <input type="checkbox" class="check__input" name="agree" required />
-                        <span class="check__mark"></span>
-                        <span class="check__label">
-                            Подписаться
-                            Согласие на обработку персональных данных
-                        </span>
-                    </label>
-                </form>
-            </div>
-        </div>
-
-    </footer>
-
-    <div class="pp">
-        <div class="pp__container">
-            <div class="pp__sticky-close">
-                <button type="button" class="pp__sticky-btn">
-                    <svg class="pp__btn-icon" width="24" height="24">
-                        <use xlink:href="assets/icons/symbols.svg#x"></use>
-                    </svg>
-                </button>
-            </div>
-            <div class="pp__wrapper">
-                <h3 class="pp__title">
-                    Заполните форму <br />
-                    и мы подберём площадку
-                </h3>
-                <div class="pp__form form">
-                    <div class="form__list">
-                        <div class="form__field form__field--w50 field">
-                            <h6 class="field__title">
-                                Формат мероприятия:
-                            </h6>
-                            <div class="field__radio radio">
-                                <label class="radio__label">
-                                    <input type="radio" name="format" value="seminar" class="radio__input" checked />
-                                    <span class="radio__mark"></span>
-                                    <span class="radio__name"></span>Мастер-класс/семинар</span>
-                                </label>
-                                <label class="radio__label">
-                                    <input type="radio" name="format" value="concert" class="radio__input" />
-                                    <span class="radio__mark"></span>
-                                    <span class="radio__name"></span>Концерт/выступление</span>
-                                </label>
-                                <label class="radio__label">
-                                    <input type="radio" name="format" value="show" class="radio__input" />
-                                    <span class="radio__mark"></span>
-                                    <span class="radio__name"></span>Выставка/показ</span>
-                                </label>
-                                <label class="radio__label">
-                                    <input type="radio" name="format" value="other" class="radio__input" />
-                                    <span class="radio__mark"></span>
-                                    <span class="radio__name"></span>Другое</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form__group">
-                            <div class="form__field form__field--mb30 field">
-                                <h6 class="field__title">Планируемое количество посетителей:</h6>
-                                <select name="amount" class="field__select">
-                                    <option value="20">
-                                        до 20 человек
-                                    </option>
-                                    <option value="100">
-                                        до 20 до 100 человек
-                                    </option>
-                                    <option value="500">
-                                        от 100 до 500 человек
-                                    </option>
-                                    <option value="501">
-                                        более 500 человек
-                                    </option>
-                                </select>
-                            </div>
-                            <div class="form__field field">
-                                <h6 class="field__title">Дата проведения:</h6>
-                                <div class="field__inputs">
-                                    <input class="field__input field__input--w55 field__input--datetime" type="text"
-                                        placeholder="ДД" />
-                                    <input class="field__input field__input--w55 field__input--datetime" type="text"
-                                        placeholder="ММ" />
-                                    <input class="field__input field__input--w110 field__input--datetime" type="text"
-                                        placeholder="ГГГГ" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form__section">
-                        <h6 class="field__title">
-                            Контактные данные:
-                        </h6>
-                        <div class="form__list form__list--mb50">
-                            <label class="form__field form__field--w50 field">
-                                <span class="field__label">
-                                    Имя*
-                                </span>
-                                <input type="text" class="field__input" placeholder="Имя" name="name" required />
-                            </label>
-                            <label class="form__field form__field--w50 field">
-                                <span class="field__label">
-                                    Фамилия*
-                                </span>
-                                <input type="text" class="field__input" placeholder="Фамилия" name="last_name"
-                                    required />
-                            </label>
-                            <label class="form__field form__field--w50 field">
-                                <span class="field__label">
-                                    Телефон*
-                                </span>
-                                <input type="tel" class="field__input" placeholder="+7()___ __ __" name="phone"
-                                    required />
-                            </label>
-                            </label>
-                            <label class="form__field form__field--w50 field">
-                                <span class="field__label">
-                                    Email*
-                                </span>
-                                <input type="email" class="field__input" placeholder="Email" name="email" required />
-                            </label>
-                        </div>
-                        <label class="form__field form__field--mb30 field">
-                            <span class="field__label field__label--textarea">
-                                Есть пожелания? Напишите нам:
-                            </span>
-                            <textarea class="field__textarea" name="wish"></textarea>
-                        </label>
-
-                        <label class="form__check form__check--mb40 check">
-                            <input type="checkbox" class="check__input" name="agree" required />
-                            <span class="check__mark"></span>
-                            <span class="check__label">
-                                Я соглашаюсь с пользовательским соглашением и с политикой использования персональных
-                                данных
-                            </span>
-                        </label>
-                        <div class="form_btn">
-                            <button type="submit" class="form__btn btn">
-                                Отправить
-                            </button>
-                            <button type="close" class="form__btn--close btn--close btn">
-                                Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="page-header__right-block">
+        <a href="#" class="btn page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
+      </div>
     </div>
+
+  </header>
+
+  <main class="main">
+    <div class="breadcrumbs">
+      <a href="#" class="breadcrumbs__link">Главная</a>
+      <a href="#" class="breadcrumbs__link">Раздел</a>
+      <a href="#" class="breadcrumbs__link">Страница раздела</a>
+    </div>
+
+    <article class="event">
+      <header class="event__header">
+        <h1 class="event__title title">Вечер | The Best of Sade</h1>
+
+        <div class="event__about">
+          <div class="event__info">
+            <time datetime="2024-12-16T20:00" class="event__time">
+              16/12/2024
+            </time>
+
+            <div class="event__info-text">
+              Кафе "Птичка"
+            </div>
+          </div>
+
+          <picture class="event__picture">
+            <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/sade_mobile.webp" />
+
+            <source media="(max-width: 1169px)" srcset="assets/images/sade_mobile.jpg" />
+
+            <source type="image/webp" srcset="assets/images/sade.webp" />
+
+            <img class="event__image" src="assets/images/sade.jpg" alt="Вечер | The Best of Sade">
+          </picture>
+
+          <div class="event__info">
+            <span class="event__time" data-caption="начало">
+              20:00
+            </span>
+
+            <div class="event__info-text">
+              Ленина 10 | 2 этаж
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="event__container">
+        <div class="event__content content">
+          <h5>Программа мероприятия:</h5>
+
+          <ul>
+            <li>20:15 — Приветствие гостей</li>
+            <li>20:30 — Первая подача блюд | Салаты</li>
+            <li>20:40 — Живой вокал | Композиции 1-3</li>
+            <li>21:20 — Подача горячих блюд</li>
+            <li> 21:30 — Живой вокал | Композиции 4-7</li>
+            <li>22:15 — Подача десерта</li>
+            <li>22:30 — Живой вокал | Композиции 8-9</li>
+            <li>23:00 — Завершение вечера</li>
+          </ul>
+
+          <br />
+          <h5>The Best of Sade</h5>
+          <p>
+            Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая самые
+            популярные хиты группы, раритеты и их любимые треки.
+          </p>
+
+          <p>
+            Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры. Она
+            лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав
+            более 2 миллионов копий в Европе.
+          </p>
+
+          <br />
+
+          <ol>
+            <li>Your Love Is King</li>
+            <li>Hang On To Your Love</li>
+            <li>Smooth Operator</li>
+            <li>Jezebel</li>
+            <li>The Sweetest Taboo</li>
+            <li>Is It A Crime</li>
+            <li>Never As Good As The First Time</li>
+            <li>Love Is Stronger Than Pride</li>
+            <li>Paradise</li>
+          </ol>
+        </div>
+
+        <!-- prettier-ignore -->
+        <form class="reserve event__reserve">
+          <div class="reserve__checks">
+            <h4 class="reserve_section-title reserve__section-title--mb30">
+              Забронировать столик
+            </h4>
+
+            <label class="reserve__check check check--red">
+              <input type="checkbox" name="table_1" class="check__input" />
+              <span class="check__mark"></span>
+              <span class="check__label">1 стол</span>
+            </label>
+
+            <label class="reserve__check check">
+              <input type="checkbox" name="table_2" class="check__input" />
+              <span class="check__mark"></span>
+              <span class="check__label">2 стол</span>
+            </label>
+
+            <label class="reserve__check check">
+              <input type="checkbox" name="table_3" class="check__input" />
+              <span class="check__mark"></span>
+              <span class="check__label">3 стол</span>
+            </label>
+
+            <label class="reserve__check check check--red">
+              <input type="checkbox" name="table_4" class="check__input" />
+              <span class="check__mark"></span>
+              <span class="check__label">4 стол</span>
+            </label>
+
+            <label class="reserve__check check check--disabled">
+              <input type="checkbox" name="table_5" class="check__input" disabled />
+              <span class="check__mark"></span>
+              <span class="check__label">5 стол</span>
+            </label>
+
+            <label class="reserve__check check">
+              <input type="checkbox" name="table_6" class="check__input" />
+              <span class="check__mark"></span>
+              <span class="check__label">6 стол</span>
+            </label>
+
+            <label class="reserve__check check check--red">
+              <input type="checkbox" name="table_7" class="check__input" />
+              <span class="check__mark"></span>
+              <span class="check__label">7 стол</span>
+            </label>
+
+            <label class="reserve__check check check--red">
+              <input type="checkbox" name="table_8" class="check__input" />
+              <span class="check__mark"></span>
+              <span class="check__label">8 стол</span>
+            </label>
+
+            <label class="reserve__check check check--red">
+              <input type="checkbox" name="table_9" class="check__input" />
+              <span class="check__mark"></span>
+              <span class="check__label">9 стол</span>
+            </label>
+
+            <label class="reserve__check check">
+              <input type="checkbox" name="table_10" class="check__input" />
+              <span class="check__mark"></span>
+              <span class="check__label">10 стол</span>
+            </label>
+
+            <label class="reserve__check check">
+              <input type="checkbox" name="table_11" class="check__input" />
+              <span class="check__mark"></span>
+              <span class="check__label">11 стол</span>
+            </label>
+          </div>
+
+          <div class="reserve__scheme">
+            <div class="reserve__scheme-container">
+              <h4 class="reserve__scheme-title">Сцена</h4>
+
+              <div class="reserve__scheme-wrapper">
+                <svg class="scene" width="780" height="399">
+                  <use xlink:href="assets/icons/symbols.svg#scene"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="reserve__order">
+            <h4 class="reserve__section-title">Ваши пригласительные билеты</h4>
+
+            <div class="reserve__tickets-list">
+              <div class="reserve__tickets">
+                <div class="reserve__qty" data-caption="шт." data-price="1400">0</div>
+                <div class="reserve__sum" data-currency="₽">0</div>
+              </div>
+
+              <div class="reserve__tickets">
+                <div class="reserve__qty" data-caption="шт." data-price="1250">0</div>
+                <div class="reserve__sum" data-currency="₽">0</div>
+              </div>
+            </div>
+
+            <div class="reserve__total" data-caption="Сумма" data-currency="₽">0</div>
+
+            <button type="submit" class="btn reserve__submit reserve__submit--red_dark">
+              Купить билеты
+            </button>
+          </div>
+
+          <div class="reserve__legend">
+            <div class="reserve__price">
+              <h4 class="reserve__section-title">
+                Стоимость пригласительного билета
+              </h4>
+
+              <div class="reserve__price-list">
+                <div class="reserve__price-item reserve__price-item--red" data-caption="₽ | 1 персона">
+                </div>
+                <div class="reserve__price-item" data-caption="₽ | 1 персона"></div>
+              </div>
+            </div>
+
+            <div class="reserve__notation">
+              <h4 class="reserve__section-title">
+                Примечание
+              </h4>
+
+              <div class="reserve__note reserve__note--free">доступные места</div>
+              <div class="reserve__note reserve__note--booked">забронировано</div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </article>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__border"></div>
+      <div class="page-footer__wrapper">
+        <nav class="page-footer__nav">
+          <a href="" class="page-footer__nav-link">Календарь мероприятий</a>
+          <a href="" class="page-footer__nav-link">Провести мероприятие</a>
+          <a href="" class="page-footer__nav-link">Стать арендатором</a>
+          <a href="" class="page-footer__nav-link">Наши проекты</a>
+          <a href="" class="page-footer__nav-link">Контакты</a>
+        </nav>
+        <form class="page-footer__form subscribe">
+          <h4 class="subscribe__title">
+            Подпишись и будь в курсе происходящего
+          </h4>
+          <div class="subscribe__wrapper">
+            <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+            <button type="submit" class="subscribe__submit">Подписаться</button>
+          </div>
+          <label class="subscribe__check check">
+            <input type="checkbox" class="check__input" name="agree" required />
+            <span class="check__mark"></span>
+            <span class="check__label">
+              Согласие на обработку персональных данных
+            </span>
+          </label>
+        </form>
+      </div>
+
+      <div class="svg-contacts">
+        <div class="svg-contacts__img">
+          <svg class="svg-contacts__icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#insta"></use>
+          </svg>
+        </div>
+        <div class="svg-contacts__img">
+          <svg class="svg-contacts__icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#la_vk"></use>
+          </svg>
+        </div>
+      </div>
+
+      <p class="page-footer__millennials">© Millennials 2022</p>
+      <div class="page-footer__end">
+        <div class="page-footer__end page-footer__end--1">
+
+
+          <a href="" class="page-footer__end-link">Политика конфиденциальности</a>
+          <a href="" class="page-footer__end-link">Cookies</a>
+
+        </div>
+        <div class="page-footer__end page-footer__end--2">
+          <a href="" class="page-footer__end-link">Создание и продвижение</a>
+          <a href="" class="page-footer__end-link">
+            <svg class="page-footer__tagree" width="56" height="17">
+              <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <div class="pp" id="js-eventPP">
+    <div class="pp__container">
+      <div class="pp__sticky-close">
+        <button type="button" class="pp__sticky-btn js-ppCloseBtn">
+          <svg class="pp__btn-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="pp__wrapper">
+        <h3 class="pp__title">
+          Заполните форму
+          <br />
+          и мы подберём площадку
+        </h3>
+        <div class="pp__form form">
+          <div class="form__list">
+            <div class="form__field form__field--w50 field">
+              <h6 class="field__title">
+                Формат мероприятия:
+              </h6>
+              <div class="field__radio radio">
+                <label class="radio__label">
+                  <input type="radio" name="format" value="seminar" class="radio__input" checked />
+                  <span class="radio__mark"></span>
+                  <span class="radio__name"></span>Мастер-класс/семинар</span>
+                </label>
+                <label class="radio__label">
+                  <input type="radio" name="format" value="concert" class="radio__input" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__name"></span>Концерт/выступление</span>
+                </label>
+                <label class="radio__label">
+                  <input type="radio" name="format" value="show" class="radio__input" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__name"></span>Выставка/показ</span>
+                </label>
+                <label class="radio__label">
+                  <input type="radio" name="format" value="other" class="radio__input" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__name"></span>Другое</span>
+                </label>
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="form__field form__field--mb30 field">
+                <h6 class="field__title">Планируемое количество посетителей:</h6>
+                <select name="amount" class="field__select">
+                  <option value="20">
+                    до 20 человек
+                  </option>
+                  <option value="100">
+                    до 20 до 100 человек
+                  </option>
+                  <option value="500">
+                    от 100 до 500 человек
+                  </option>
+                  <option value="501">
+                    более 500 человек
+                  </option>
+                </select>
+              </div>
+              <div class="form__field field">
+                <h6 class="field__title">Дата проведения:</h6>
+                <div class="field__inputs">
+                  <input class="field__input field__input--w55 field__input--datetime" type="text" placeholder="ДД" />
+                  <input class="field__input field__input--w55 field__input--datetime" type="text" placeholder="ММ" />
+                  <input class="field__input field__input--w110 field__input--datetime" type="text" placeholder="ГГГГ" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form__section">
+            <h6 class="field__title">
+              Контактные данные:
+            </h6>
+            <div class="form__list form__list--mb50">
+              <label class="form__field form__field--w50 field">
+                <span class="field__label">
+                  Имя*
+                </span>
+                <input type="text" class="field__input" placeholder="Имя" name="name" required />
+              </label>
+              <label class="form__field form__field--w50 field">
+                <span class="field__label">
+                  Фамилия*
+                </span>
+                <input type="text" class="field__input" placeholder="Фамилия" name="last_name" required />
+              </label>
+              <label class="form__field form__field--w50 field">
+                <span class="field__label">
+                  Телефон*
+                </span>
+                <input type="tel" class="field__input" placeholder="+7()___ __ __" name="phone" required />
+              </label>
+              <label class="form__field form__field--w50 field">
+                <span class="field__label">
+                  Email*
+                </span>
+                <input type="email" class="field__input" placeholder="Email" name="email" required />
+              </label>
+            </div>
+            <label class="form__field form__field--mb30 field">
+              <span class="field__label field__label--textarea">
+                Есть пожелания? Напишите нам:
+              </span>
+              <textarea class="field__textarea" name="wish"></textarea>
+            </label>
+
+            <label class="form__check form__check--mb40 check">
+              <input type="checkbox" class="check__input" name="agree" required />
+              <span class="check__mark"></span>
+              <span class="check__label">
+                Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных
+              </span>
+            </label>
+            <div class="form_btn">
+              <button type="submit" class="form__btn btn">
+                Отправить
+              </button>
+              <button type="close" class="form__btn--close btn--close btn js-ppCloseBtn">
+                Закрыть
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
