@@ -41,15 +41,15 @@
   <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon-180x180.png">
 
-  <link rel="icon" type="image/png" sizes="36x36" href="/android-icon-36x36.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/android-icon-48x48.png">
-  <link rel="icon" type="image/png" sizes="72x72" href="/android-icon-72x72.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/android-icon-96x96.png">
-  <link rel="icon" type="image/png" sizes="144x144" href="/android-icon-144x144.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="36x36" href="/assets/favicons/android-icon-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicons/android-icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="/assets/favicons/android-icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/android-icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="/assets/favicons/android-icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png">
   <!-- <link rel="icon" type="image/png" sizes="256x256" href="/android-chrome-256x256.png"> -->
   <!-- <link rel="icon" type="image/png" sizes="384x384" href="/android-chrome-384x384.png"> -->
-  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicons/android-chrome-512x512.png">
 
   <link rel="manifest" href="/assets/favicons/site.webmanifest">
 
@@ -58,38 +58,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer src="scripts/jquery-3.7.1.min.js"></script>
-  <script defer src="scripts/jquery.selectric.min.js"></script>
-  <script defer src="scripts/jquery.mask.min.js"></script>
-  <script defer src="scripts/jquery.validate.min.js"></script>
-  <script defer src="scripts/jquery.validate-init.js"></script>
-  <script defer src="scripts/air-datepicker.js"></script>
-  <script defer src="scripts/toastr.min.js"></script>
-  <script type="text/javascript">
-        Command: toastr["success"]("Вы все сделали правильно", "Успех")
 
-        toastr.options = {
-            "closeButton": false,
-            "debug": false,
-            "newestOnTop": false,
-            "progressBar": false,
-            "positionClass": "toast-top-right",
-            "preventDuplicates": false,
-            "onclick": null,
-            "showDuration": "300",
-            "hideDuration": "1000",
-            "timeOut": "5000",
-            "extendedTimeOut": "1000",
-            "showEasing": "swing",
-            "hideEasing": "linear",
-            "showMethod": "fadeIn",
-            "hideMethod": "fadeOut"
-        }
-
-    </script>
-
-  <script defer src="scripts/main.min.js"></script>
 </head>
 
 <body class="body">
@@ -188,41 +157,44 @@
         </nav>
 
         <form action="https://jsonplaceholder.typicode.com/posts" class="page-footer__subscribe-form subscribe-form" id="js-subscribeForm">
-
-        </form>
-        <form class="page-footer__form subscribe">
-          <h4 class="subscribe__title">
-            Подпишись и будь в курсе происходящего
-          </h4>
-          <div class="subscribe__wrapper">
-            <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
-            <button type="submit" class="subscribe__submit">Подписаться</button>
+          <div class="page-footer__form subscribe">
+            <h4 class="subscribe__title">
+              Подпишись и будь в курсе происходящего
+            </h4>
+            <div class="subscribe__wrapper">
+              <!-- <input type="email" name="email" placeholder="Email" class="subscribe__input error" required aria-describedby="email-error" aria-invalid="true">
+                        <span id="email-error" class="error">Это поле обязательно</span> -->
+              <input type="email" name="email" placeholder="Email" class="subscribe__input error" required aria-describedby="email-error" aria-invalid="true">
+              <!-- <span id="email-error" class="error">Это поле обязательно</span> -->
+              <button type="submit" class="subscribe__submit">Подписаться</button>
+            </div>
+            <label class="subscribe__check check field">
+              <input type="checkbox" class="check__input" name="agree" required />
+              <span class="check__mark"></span>
+              <span class="check__label">
+                Согласие на обработку персональных данных
+              </span>
+            </label>
           </div>
-          <label class="subscribe__check check">
-            <input type="checkbox" class="check__input" name="agree" required />
-            <span class="check__mark"></span>
-            <span class="check__label">
-              Согласие на обработку персональных данных
-            </span>
-          </label>
         </form>
-      </div>
-
-
-      <div class="svg-contacts">
-        <div class="svg-contacts__img">
-          <svg class="svg-contacts__icon" width="24" height="24">
-            <use xlink:href="assets/icons/symbols.svg#insta"></use>
-          </svg>
-        </div>
-        <div class="svg-contacts__img">
-          <svg class="svg-contacts__icon" width="24" height="24">
-            <use xlink:href="assets/icons/symbols.svg#la_vk"></use>
-          </svg>
-        </div>
       </div>
 
       <p class="page-footer__millennials">© Millennials 2022</p>
+
+      <nav class="svg-contacts">
+        <a href="" class="svg-contacts__img">
+          <svg class="svg-contacts__icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#insta"></use>
+          </svg>
+        </a>
+
+        <a href="" class="svg-contacts__img">
+          <svg class="svg-contacts__icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#la_vk"></use>
+          </svg>
+        </a>
+      </nav>
+
       <div class="page-footer__end">
 
         <div class="page-footer__end--1">
@@ -232,13 +204,11 @@
 
         </div>
         <div class="page-footer__end--2">
-          <a href="" class="page-footer__nav-link">Создание и продвижение</a>
-          <a href="" class="page-footer__nav-link">
+          <a href="" class="page-footer__nav-link">Создание и продвижение
             <svg class="page-footer__tagree" width="56" height="17">
               <use xlink:href="assets/icons/symbols.svg#tagree"></use>
             </svg>
           </a>
-
         </div>
       </div>
     </div>

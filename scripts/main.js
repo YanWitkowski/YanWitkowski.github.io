@@ -313,6 +313,7 @@
 
       const dateConfig = {
         autoClose: true,
+        container: ".field__date",
         minDate: new Date(),
         navTitles: {
           days: "MMMM <i>yyyy</i>"
@@ -329,4 +330,52 @@
       pickerInit($(this));
     });
   }
+
+//   const checkboxes = document.querySelectorAll('.check__input');
+
+// checkboxes.forEach((checkbox) => {
+//   checkbox.addEventListener('change', function () {
+//     const tableId = this.getAttribute('value');
+//     const table = document.querySelector(`[data-check="table_${tableId}"]`);
+
+//     if (table) {
+//       if (this.checked) {
+//         table.classList.add('active');
+//       } else {
+//         table.classList.remove('active');
+//       }
+//     }
+//   });
+// });
+
+// document.querySelectorAll('.scene__table').forEach(item => {
+//   item.addEventListener('click', function() {
+//     this.classList.toggle('active');
+//   });
+// });
+
+  // const checkbox = document.getElementById('1');
+  // const scene__table = document.getElementById('table_1');
+
+  // checkbox.addEventListener('change', function () {
+  //   if (this.checked) {
+  //     scene__table.classList.add('highlight');
+  //   } else {
+  //     scene__table.classList.remove('highlight');
+  //   }
+  // });
+
+// Найти элементы
+const checkbox = document.querySelector('input[id="1"]');
+const table = document.getElementById('table_1');
+
+// Добавить обработчик события
+checkbox.addEventListener('change', () => {
+  // Добавить/удалить класс "fill-in" с таблицы с анимацией
+  table.classList.toggle('fill-in');
+  setTimeout(() => {
+    table.classList.toggle('fill-in');
+  }, 500);
+});
+
 })();
